@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações - SecureWay</title>
+    <link rel="stylesheet" href="../css/info.css">
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>SecureWay</h1>
+            <h2>ℹ️ Informações</h2>
+            <nav>
+                <ul>
+                    <li><a href="../abrigos/abrigo.html">⛺ Abrigos</a></li>
+                    <li><a href="../dicas/dicas.html">💡 Dicas úteis</a></li>
+                    <li><a href="../home/home.html">🏠 Home</a></li>
+                    <li><a href="../doacoes/doacoes.html">🎁 Doações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-- Alerta -->
+    <section class="alerta">
+        <p><strong>⚠️ Atenção:</strong> Deslizamento de terra na região norte. Evacuar imediatamente!</p>
+    </section>
+    
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+
+            <h2>Estamos aqui para ajudar</h2>
+            <p>Encontre informações, abrigos, suporte e orientações durante situações de emergência.</p>
+        </div>
+    </section>
+
+    <!-- Seção de informações importantes -->
+        <section class="secao">
+            <div class="container">
+                <h2>O que você encontra aqui</h2>
+
+                <div class="info-grid">
+
+                    <div class="card">
+                        <h3>📍 Abrigos Disponíveis</h3>
+                        <p>Encontre abrigos seguros próximos da sua região com capacidade atualizada e contatos úteis.</p>
+                        <a href="../abrigos/abrigo.html">Ver abrigos</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>🚑 Assistência Imediata</h3>
+                        <p>Saiba como obter auxílio e suporte emergencial nas áreas afetadas.</p>
+                        <a href="../contatos/contato.html">Pedir ajuda</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎁 Como Ajudar</h3>
+                        <p>Seja voluntário ou faça doações. Toda ajuda é essencial para quem está passando por dificuldades.</p>
+                        <a href="../doacoes/doacoes.html">Ajudar agora</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>💡 Dicas de Segurança</h3>
+                        <p>Confira orientações importantes para se proteger antes, durante e após emergências e desastres.</p>
+                        <a href="../dicas/dicas.html">Ver dicas</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Chatbot -->
+    <input type="checkbox" id="toggle-chat">
+    <div id="botao-flutuante" onclick="document.getElementById('toggle-chat').checked = !document.getElementById('toggle-chat').checked;">💬</div>
+
+
+    <div id="chatbot-window">
+    <div id="chatbot-header">
+        Lumina
+        <button id="close-chatbot" onclick="document.getElementById('toggle-chat').checked = false;">×</button>
+    </div>
+    <div id="chatMessages"></div>
+    <form id="chatForm">
+        <div id="quickButtons">
+            <button type="button" id="btnPrevisao">🌤️ Previsão</button>
+            <button type="button" id="btnDuvidas">❓ Dúvidas</button>
+        </div>
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem..." autocomplete="off">
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SecureWay | Todos os direitos reservados</p>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/bot.js"></script>
+
+</body>
+</html>

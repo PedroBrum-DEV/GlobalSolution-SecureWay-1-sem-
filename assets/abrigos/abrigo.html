@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrigos - SecureWay</title>
+    <link rel="stylesheet" href="../css/abrigos.css">
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>SecureWay</h1>
+            <h2>⛺ Abrigos</h2>
+            <nav>
+                <ul>
+                    <li><a href="../doacoes/docoes.html">🎁 Doações</a></li>
+                    <li><a href="../informacoes/info.html">ℹ️ Informações</a></li>
+                    <li><a href="../home/home.html">🏠 Home</a></li>
+                    <li><a href="../dicas/dicas.html">💡 Dicas úteis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-- Alerta -->
+    <section class="alerta">
+        <p><strong>⚠️ Atenção:</strong> Deslizamento de terra na região norte. Evacuar imediatamente!</p>
+    </section>
+
+    <!-- Seção dos Abrigos -->
+    <section id="informacoes" class="secao">
+        <div class="container">
+            <h2>Principais abrigos</h2>
+
+            <div class="cards">
+
+                <!-- Card 1 -->
+                <div class="card" data-modal="modal1">
+                    <div class="card-content">
+                        <h3>🛡️ Abrigo Solidário – Estação Pedro II</h3>
+                        <p>📍 Localização: Estação Pedro II do Metrô, Centro – São Paulo.</p>
+                        <p>➡️ Clique para mais informações</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card" data-modal="modal2">
+                    <div class="card-content">
+                        <h3>🛡️ Centro de Acolhimento – Vila Mariana</h3>
+                        <p>📍 Localização: Rua Domingos de Morais, Vila Mariana – São Paulo.</p>
+                        <p>➡️ Clique para mais informações</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" data-modal="modal3">
+                    <div class="card-content">
+                        <h3>🛡️ Abrigo Municipal – Largo da Batata</h3>
+                        <p>📍 Localização: Av. Brigadeiro Faria Lima, Pinheiros – São Paulo.</p>
+                        <p>➡️ Clique para mais informações</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-text">
+                <h2>🛡️ Abrigo Solidário – Estação Pedro II</h2>
+                <p><strong>📍 Localização:</strong> Estação Pedro II do Metrô, entrada pela Rua da Figueira – Centro.</p>
+                <p><strong>🕒 Funcionamento:</strong> Das 19h às 8h.</p>
+                <p><strong>🛏️ Capacidade:</strong> Até 400 pessoas.</p>
+                <p><strong>🍽️ Serviços:</strong> Jantar, café, colchões, cobertores e espaço pet.</p>
+                <p><strong>🔗 Fonte:</strong> <a href="https://www.desenvolvimentosocial.sp.gov.br/" target="_blank">Desenvolvimento Social SP</a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-text">
+                <h2>🛡️ Centro de Acolhimento – Vila Mariana</h2>
+                <p><strong>📍 Localização:</strong> Rua Domingos de Morais, Vila Mariana – SP.</p>
+                <p><strong>🕒 Funcionamento:</strong> 24 horas.</p>
+                <p><strong>🛏️ Capacidade:</strong> 200 pessoas.</p>
+                <p><strong>🍽️ Serviços:</strong> Alimentação, banho, roupas, colchões e apoio psicológico.</p>
+                <p><strong>🔗 Fonte:</strong> <a href="https://www.prefeitura.sp.gov.br/" target="_blank">Prefeitura de SP</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-text">
+                <h2>🛡️ Abrigo Municipal – Largo da Batata</h2>
+                <p><strong>📍 Localização:</strong> Av. Brigadeiro Faria Lima, Pinheiros – SP.</p>
+                <p><strong>🕒 Funcionamento:</strong> Das 18h às 8h.</p>
+                <p><strong>🛏️ Capacidade:</strong> 150 pessoas.</p>
+                <p><strong>🍽️ Serviços:</strong> Colchões, refeições, banho, e espaço para animais.</p>
+                <p><strong>🔗 Fonte:</strong> <a href="https://www.prefeitura.sp.gov.br/" target="_blank">Prefeitura de SP</a></p>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+        <!-- Chatbot -->
+    <input type="checkbox" id="toggle-chat">
+    <div id="botao-flutuante" onclick="document.getElementById('toggle-chat').checked = !document.getElementById('toggle-chat').checked;">💬</div>
+
+
+    <div id="chatbot-window">
+    <div id="chatbot-header">
+        Lumina
+        <button id="close-chatbot" onclick="document.getElementById('toggle-chat').checked = false;">×</button>
+    </div>
+    <div id="chatMessages"></div>
+    <form id="chatForm">
+        <div id="quickButtons">
+            <button type="button" id="btnPrevisao">🌤️ Previsão</button>
+            <button type="button" id="btnDuvidas">❓ Dúvidas</button>
+        </div>
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem..." autocomplete="off">
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+    <!-- Rodapé -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 SecureWay | Todos os direitos reservados</p>
+        <div class="social">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+</footer>
+    
+    <script src="../js/abrigo.js"></script>
+    <script src="../js/bot.js"></script>
+
+</body>
+</html>

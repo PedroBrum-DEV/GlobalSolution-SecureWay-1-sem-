@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - SecureWay</title>
+    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>SecureWay</h1>
+            <h2>🧠 Sobre nós</h3>
+            <nav>
+                <ul>
+                    <li><a href="../integrantes/integrantes.html">👥 Integrantes</a></li>
+                    <li><a href="../informacoes/info.html">ℹ️ Informações</a></li>
+                    <li><a href="../home/home.html">🏠 Home</a></li>
+                    <li><a href="../contatos/contato.html">☎️ Contatos</a></li>
+                    <li><a href="../faq/faq.html">❓ FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-- Alerta -->
+    <section class="alerta" id="alerta">
+        <p><strong>⚠️ Atenção:</strong> Deslizamento de terra na região norte. Evacuar imediatamente!</p>
+    </section>
+
+    <section class="secao">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <p>
+                O <strong>SecureWay</strong> é uma plataforma dedicada a fornecer suporte e informações em situações de emergência, como desastres naturais, incêndios, enchentes e outros eventos críticos.
+            </p>
+            <p>
+                Nossa missão é conectar pessoas afetadas a recursos essenciais, como <strong>abrigos temporários, serviços de emergência, contatos úteis e voluntários</strong> dispostos a ajudar.
+            </p>
+            <p>
+                Atuamos em parceria com <strong>órgãos governamentais, ONGs, defesa civil</strong> e comunidades locais, garantindo que a informação chegue de forma rápida, clara e acessível.
+            </p>
+            <p>
+                Nosso compromisso é: <strong>salvar vidas, oferecer segurança e apoio nos momentos mais difíceis.</strong>
+            </p>
+            <p>
+                <strong>📧 Contato:</strong> <a href="mailto:secureway@salvedesastres.org">secureway@salvedesastres.org</a>
+            </p>
+        </div>
+    </section>
+    </main>
+
+        <!-- Chatbot -->
+    <input type="checkbox" id="toggle-chat">
+    <div id="botao-flutuante" onclick="document.getElementById('toggle-chat').checked = !document.getElementById('toggle-chat').checked;">💬</div>
+
+
+    <div id="chatbot-window">
+    <div id="chatbot-header">
+        Lumina
+        <button id="close-chatbot" onclick="document.getElementById('toggle-chat').checked = false;">×</button>
+    </div>
+    <div id="chatMessages"></div>
+    <form id="chatForm">
+        <div id="quickButtons">
+            <button type="button" id="btnPrevisao">🌤️ Previsão</button>
+            <button type="button" id="btnDuvidas">❓ Dúvidas</button>
+        </div>
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem..." autocomplete="off">
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 SecureWay | Todos os direitos reservados</p>
+        <div class="social">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="../js/bot.js"></script>
+
+</body>
+</html>

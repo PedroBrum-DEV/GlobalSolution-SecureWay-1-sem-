@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes - SecureWay</title>
+    <link rel="stylesheet" href="../css/integrantes.css">
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>SecureWay</h1>
+            <h2>👥 Integrantes</h2>
+            <nav>
+                <ul>
+                    <li><a href="../sobre/sobre.html">🧠 Sobre nós</a></li>
+                    <li><a href="../informacoes/info.html">ℹ️ Informações</a></li>
+                    <li><a href="../home/home.html">🏠 Home</a></li>
+                    <li><a href="../contatos/contato.html">☎️ Contatos</a></li>
+                    <li><a href="../faq/faq.html">❓ FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-- alerta -->
+    <section class="alerta" id="alerta">
+        <p><strong>⚠️ Atenção:</strong> Deslizamento de terra na região norte. Evacuar imediatamente!</p>
+    </section>
+
+<!-- integrantes -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Nosso Time</h2>
+            <div class="team-cards">
+
+                <!-- Integrante 1 -->
+                <div class="team-member" onclick="openModal(1)">
+                    <img src="../image/felipeflosi.jpg" alt="Luiz Felipe Flosi">
+                    <h3>Luiz Felipe Flosi</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/felipeflosi" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/felipeflosi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Integrante 2 -->
+                <div class="team-member" onclick="openModal(2)">
+                    <img src="../image/arthurbrito.jpg" alt="Arthur Brito">
+                    <h3>Arthur Brito da Silva</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/arthurbrito" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/arthurbrito" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Integrante 3 -->
+                <div class="team-member" onclick="openModal(3)">
+                    <img src="../image/pedrobrum.jpg" alt="Pedro Brum">
+                    <h3>Pedro Brum</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/pedrobrum" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/pedrobrum" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-image">
+                <img id="modal-img" src="" alt="Imagem do Integrante">
+            </div>
+            <div class="modal-text">
+                <h2 id="modal-name"></h2>
+                <p id="modal-desc"></p>
+                <div class="modal-links">
+                    <a id="modal-github" href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a id="modal-linkedin" href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+        <!-- Chatbot -->
+    <input type="checkbox" id="toggle-chat">
+    <div id="botao-flutuante" onclick="document.getElementById('toggle-chat').checked = !document.getElementById('toggle-chat').checked;">💬</div>
+
+
+    <div id="chatbot-window">
+    <div id="chatbot-header">
+        Lumina
+        <button id="close-chatbot" onclick="document.getElementById('toggle-chat').checked = false;">×</button>
+    </div>
+    <div id="chatMessages"></div>
+    <form id="chatForm">
+        <div id="quickButtons">
+            <button type="button" id="btnPrevisao">🌤️ Previsão</button>
+            <button type="button" id="btnDuvidas">❓ Dúvidas</button>
+        </div>
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem..." autocomplete="off">
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+    <!-- rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SecureWay | Todos os direitos reservados</p>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- java script -->
+    <script src="../js/integrantes.js"></script>
+    <script src="../js/bot.js"></script>
+
+</body>
+</html>

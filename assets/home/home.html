@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home - SecureWay</title>
+    <link rel="stylesheet" href="../css/home.css"/>
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon"/>
+  </head>
+  <body>
+    
+    <!-- Cabeçalho -->
+    <header>
+      <div class="container">
+        <h1>SecureWay</h1>
+        <h2>🏠 Home</h2>
+        <nav>
+          <ul>
+            <li><a href="../integrantes/integrantes.html">👥 Integrantes</a></li>
+            <li><a href="../sobre/sobre.html">🧠 Sobre nós</a></li>
+            <li><a href="../informacoes/info.html">ℹ️ Informações</a></li>
+            <li><a href="../contatos/contato.html">☎️ Contatos</a></li>
+            <li><a href="../faq/faq.html">❓ FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+    <!-- Alerta -->
+    <section class="alerta">
+      <p>
+        <strong>⚠️ Atenção:</strong> Deslizamento de terra na região norte.
+        Evacuar imediatamente!
+      </p>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container">
+        <h2>Estamos aqui para ajudar</h2>
+        <p>Informações rápidas, abrigos e assistência durante emergências.</p>
+      </div>
+    </section>
+
+    <!-- Seção de Informações -->
+    <section class="secao">
+      <div class="container">
+        <h2>Informações Importantes</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>🚑 Primeiros Socorros</h3>
+            <p>Guia essencial para agir em emergências médicas.</p>
+            <div class="card-footer">
+              <button class="openModalBtn" data-modal="modal1">
+                Abrir Guia
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>🎒 Itens de Emergência</h3>
+            <p>Prepare seu kit para situações de risco.</p>
+            <div class="card-footer">
+              <button class="openModalBtn" data-modal="modal2">
+                Abrir Lista
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>🗺️ Rotas de Evacuação</h3>
+            <p>Descubra as rotas seguras recomendadas.</p>
+            <div class="card-footer">
+              <button class="openModalBtn" data-modal="modal3">
+                Abrir Rotas
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modais -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>🚑 Primeiros Socorros</h2>
+        <div id="content1"></div>
+        <div class="modal-buttons">
+          <button class="prevBtn" data-content="content1">⬅️ Voltar</button>
+          <button class="nextBtn" data-content="content1">➡️ Próximo</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>🎒 Itens de Emergência</h2>
+        <div id="content2">
+          <ul>
+            <li>💧 Água potável</li>
+            <li>🍞 Alimentos não perecíveis</li>
+            <li>📑 Documentos importantes</li>
+            <li>💊 Medicamentos essenciais</li>
+            <li>🔦 Lanternas e pilhas</li>
+            <li>📻 Rádio com pilhas</li>
+            <li>🧤 Kit de primeiros socorros</li>
+            <li>📱 Carregadores portáteis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>🗺️ Rotas de Evacuação</h2>
+        <div id="content3">
+          <ul>
+            <li>
+              ➡️ Rua das Flores ➝ Praça Central ➝ Escola Municipal São José (🛖
+              Abrigo)
+            </li>
+            <li>➡️ Av. Central ➝ Centro Comunitário Vila Nova (🏢 Abrigo)</li>
+            <li>➡️ Rua dos Esportes ➝ Ginásio Poliesportivo (🏫 Abrigo)</li>
+          </ul>
+          <p>⚠️ Siga sempre as orientações das autoridades locais.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abrigos -->
+    <section class="secao abrigos">
+      <div class="container">
+        <h2>Abrigos Disponíveis</h2>
+        <ul>
+          <li>
+            <a href="../abrigos/abrigo.html"
+              >🛖 Escola Municipal São José - Rua das Flores, 123</a
+            >
+          </li>
+          <li>
+            <a href="../abrigos/abrigo.html"
+              >🏢 Centro Comunitário Vila Nova - Av. Central, 456</a
+            >
+          </li>
+          <li>
+            <a href="../abrigos/abrigo.html"
+              >🏫 Ginásio Poliesportivo - Rua dos Esportes, 789</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    </main>
+
+        <!-- Chatbot -->
+    <input type="checkbox" id="toggle-chat">
+    <div id="botao-flutuante" onclick="document.getElementById('toggle-chat').checked = !document.getElementById('toggle-chat').checked;">💬</div>
+
+
+    <div id="chatbot-window">
+    <div id="chatbot-header">
+        Lumina
+        <button id="close-chatbot" onclick="document.getElementById('toggle-chat').checked = false;">×</button>
+    </div>
+    <div id="chatMessages"></div>
+    <form id="chatForm">
+        <div id="quickButtons">
+            <button type="button" id="btnPrevisao">🌤️ Previsão</button>
+            <button type="button" id="btnDuvidas">❓ Dúvidas</button>
+        </div>
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem..." autocomplete="off">
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="container">
+        <p>Em caso de dúvidas ou ajuda externa, entre em contato conosco</p>
+        <div class="social">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+          <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/home.js"></script>
+    <script src="../js/bot.js"></script>
+
+</body>
+</html>

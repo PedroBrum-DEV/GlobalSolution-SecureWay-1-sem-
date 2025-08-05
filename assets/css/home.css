@@ -1,0 +1,216 @@
+/* reset */
+@import url(style.css);
+
+
+/* banner */
+.banner {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* seção cards */
+.secao {
+    padding: 50px 0;
+}
+
+.secao h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #0077b6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #023e8a;
+    text-align: center;
+}
+
+.card p {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.card button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #023e8a;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.modal-content ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.modal-content li {
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #888;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    margin: 0 10px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-buttons button:hover {
+    background-color: #023e8a;
+}
+
+/* abrigos */
+.abrigos ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.abrigos ul li {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.abrigos ul li a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.abrigos ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.abrigos ul li h3 {
+    margin-bottom: 15px;
+    color: #023e8a;
+}
+
+.abrigos ul li p {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.abrigos ul li .abrigo-footer {
+    text-align: center;
+}
+
+.abrigos ul li button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.abrigos ul li button:hover {
+    background-color: #023e8a;
+}
+

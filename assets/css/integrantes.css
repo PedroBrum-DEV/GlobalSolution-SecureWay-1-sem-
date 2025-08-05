@@ -1,0 +1,143 @@
+/* reset */
+@import url(style.css);
+
+
+/* seção integrantes */
+.team-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    margin-bottom: 30px;
+    color: #004d7a;
+}
+
+.team-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 280px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    margin: 15px 0 10px;
+    color: #004d7a;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #004d7a;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077cc;
+}
+
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.modal-image {
+    flex: 1 1 300px;
+}
+
+.modal-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-text {
+    flex: 1 1 400px;
+}
+
+.modal-text h2 {
+    color: #004d7a;
+    margin-bottom: 15px;
+}
+
+.modal-text p {
+    margin-bottom: 20px;
+}
+
+.modal-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #004d7a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.modal-links a:hover {
+    background-color: #0077cc;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #004d7a;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #0077cc;
+}

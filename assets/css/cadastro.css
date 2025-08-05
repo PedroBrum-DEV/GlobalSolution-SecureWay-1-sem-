@@ -1,0 +1,133 @@
+@import url(style.css);
+
+.container h2 {
+    text-align: center;
+    margin: 10 px auto;
+}
+/* Formulário */
+.form-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+    border-color: #0077cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.4);
+}
+
+/* Agrupamento nome */
+.name-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.name-group .input-wrapper {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Agrupamento telefone */
+.phone-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.phone-group select {
+    flex: 1;
+    min-width: 100px;
+}
+
+.phone-group input {
+    flex: 2;
+    min-width: 180px;
+}
+
+/* Botão do formulário */
+.form-box button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-box button:hover {
+    background-color: #005fa3;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.form-box button:active {
+    background-color: #004a82;
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão estilo link */
+.btn_login {
+    display: block;
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.096);
+    color: #333;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn_login:hover {
+    background-color: rgba(44, 44, 44, 0.623);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.btn_login:active {
+    background-color: #004a82;
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+}
